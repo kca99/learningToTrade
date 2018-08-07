@@ -8,7 +8,7 @@ start_date= datetime.datetime(2016,1,1)
 end_date = datetime.date.today()
 
 # User pandas_reader.data.DataReader to load the desired data. As simple as that.
-df = data.DataReader({'V', 'SQ', 'MA'}, 'morningstar', start_date, end_date)
+df = data.DataReader({'V', 'SQ', 'MA',}, 'morningstar', start_date, end_date)
 # df = data.DataReader('IQ', 'morningstar', start_date, end_date)
 
 this = df.index.get_level_values('Date')
